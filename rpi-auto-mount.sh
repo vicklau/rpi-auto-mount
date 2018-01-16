@@ -110,7 +110,7 @@ createmenu ()
 }
 
 function select_device {
-	devives_list=
+	devices_list=
 
 	for DEVICE in $(sudo blkid -o device); do
 		LABEL=$(sudo blkid -o value -s LABEL $DEVICE)
